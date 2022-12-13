@@ -1,3 +1,4 @@
+#it makes a version string, such as 20221213 or 2022.12.13
 from datetime import datetime as d
 import os
 
@@ -11,8 +12,8 @@ clear()
 answer = input('Select a style: [S]eperated [C]ombined ')
 
 t = d.now()
-cdt = t.strftime('%Y%M%d')
-sdt = t.strftime('%Y.%M.%d')
+cdt = t.strftime('%Y%m%d')
+sdt = t.strftime('%Y.%m.%d')
 
 if answer == 'S':
     clear()
